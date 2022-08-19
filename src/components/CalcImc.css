@@ -1,0 +1,152 @@
+.main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(116.82deg, rgba(247, 183, 24, 0.7) 0%, rgba(245, 197, 78, 0.6) 100%);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 60vw;
+  height: 70vh;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+}
+
+
+
+.labelPeso {
+  display: flex;
+  justify-content: space-between;
+}
+
+.labelAltura {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputPeso {
+  width: 100%;
+}
+
+.inputAltura {
+  width: 100%;
+}
+
+.button {
+  padding: 0.8em;
+  margin-bottom: 14px;
+  width: 100%;
+  background: #F7B718;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #f7b818e8;
+}
+
+
+.estilo {
+  -webkit-appearance: none;
+  background: #FFFFFF;
+  outline: none;
+  width: 100%;
+  height: 20px;
+  border-radius: 9px;
+}
+
+.estilo::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  background: #F7B718;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: 'poppins';
+}
+
+.division-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 15vw;
+  align-items: center;
+}
+
+.peso {
+  font-size: 1.5em;
+  margin-left: 6px;
+}
+
+.altura {
+  font-size: 1.5em;
+  margin-left: 6px;
+}
+
+.title {
+  font-size: 3em;
+  margin-top: 1em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 44vh;
+  width: 15vw;
+}
+.resultadoFinal {
+  font-size: 1.5em;
+  width: 32vw;
+}
+#resultadoAltura {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  color: #F7B718;
+  font-family: 'poppins';
+}
+
+#resultadoPeso {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  color: #F7B718;
+  font-family: 'poppins';
+}
+@media (max-width: 768px) {
+  .body {
+    width: 87vw;
+  }
+  .division-title {
+    width: 50vw;
+  }
+  .footer {
+    width: 50vw;
+  }
+  .resultadoFinal {
+    width: 80vw;
+  }
+  .title {
+    margin-top: 1.3em;
+    font-size: 2.4em;
+  }
+}
